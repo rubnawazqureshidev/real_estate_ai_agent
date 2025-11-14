@@ -20,7 +20,7 @@
                 <p class="hero-subtitle">The intelligent assistant that qualifies leads, answers questions, and books appointments while you focus on closing deals.</p>
                 <div class="cta-buttons">
                     <a href="#contact" class="btn btn-primary">Get Your Free Demo</a>
-                    <a href="#features" class="btn btn-secondary">See How It Works</a>
+                    <a href="roi-calculator.php" class="btn btn-secondary">Calculate Your ROI</a>
                 </div>
             </div>
         </div>
