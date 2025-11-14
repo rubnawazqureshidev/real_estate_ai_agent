@@ -20,7 +20,7 @@
                 <p class="hero-subtitle">The intelligent assistant that qualifies leads, answers questions, and books appointments while you focus on closing deals.</p>
                 <div class="cta-buttons">
                     <a href="#contact" class="btn btn-primary">Get Your Free Demo</a>
-                    <a href="#pricing" class="btn btn-secondary">View Pricing</a>
+                    <a href="#roi-calculator" class="btn btn-secondary">Calculate Your ROI</a>
                 </div>
             </div>
         </div>
@@ -131,7 +131,138 @@
         </div>
     </section>
 
-    <!-- Pricing Section -->
+    <!-- ROI Calculator Section -->
+    <section class="roi-calculator-section" id="roi-calculator">
+        <div class="container">
+            <div class="section-header">
+                <h2>Calculate Your Potential ROI</h2>
+                <p class="section-subtitle">Adjust the sliders below to see how much revenue you can generate and costs you can save with our AI Agent</p>
+            </div>
+
+            <div class="roi-calculator-container">
+                <!-- Input Sliders -->
+                <div class="roi-inputs">
+                    <h3 class="roi-subsection-title">Your Agency Metrics</h3>
+
+                    <div class="slider-group">
+                        <div class="slider-label-row">
+                            <label for="monthlyLeads">Monthly Lead Volume</label>
+                            <span class="slider-value" id="monthlyLeadsValue">500</span>
+                        </div>
+                        <input type="range" id="monthlyLeads" min="50" max="2000" step="50" value="500" class="slider">
+                        <div class="slider-hint">Number of inquiries per month</div>
+                    </div>
+
+                    <div class="slider-group">
+                        <div class="slider-label-row">
+                            <label for="conversionRate">Current Conversion Rate</label>
+                            <span class="slider-value" id="conversionRateValue">2.0%</span>
+                        </div>
+                        <input type="range" id="conversionRate" min="0.5" max="10" step="0.1" value="2.0" class="slider">
+                        <div class="slider-hint">Percentage of leads that become clients</div>
+                    </div>
+
+                    <div class="slider-group">
+                        <div class="slider-label-row">
+                            <label for="avgCommission">Average Commission per Client</label>
+                            <span class="slider-value" id="avgCommissionValue">$7,500</span>
+                        </div>
+                        <input type="range" id="avgCommission" min="1000" max="25000" step="500" value="7500" class="slider">
+                        <div class="slider-hint">Average commission earned per closed deal</div>
+                    </div>
+
+                    <h3 class="roi-subsection-title">AI Agent Impact</h3>
+
+                    <div class="slider-group">
+                        <div class="slider-label-row">
+                            <label for="aiConversionIncrease">Conversion Rate Increase</label>
+                            <span class="slider-value" id="aiConversionIncreaseValue">1.0%</span>
+                        </div>
+                        <input type="range" id="aiConversionIncrease" min="0.1" max="5" step="0.1" value="1.0" class="slider">
+                        <div class="slider-hint">Conservative increase from 24/7 AI service</div>
+                    </div>
+
+                    <div class="slider-group">
+                        <div class="slider-label-row">
+                            <label for="timeSavedPerLead">Time Saved per Lead</label>
+                            <span class="slider-value" id="timeSavedPerLeadValue">15 min</span>
+                        </div>
+                        <input type="range" id="timeSavedPerLead" min="5" max="60" step="5" value="15" class="slider">
+                        <div class="slider-hint">Time saved qualifying each lead</div>
+                    </div>
+
+                    <div class="slider-group">
+                        <div class="slider-label-row">
+                            <label for="agentHourlyCost">Agent Hourly Cost</label>
+                            <span class="slider-value" id="agentHourlyCostValue">$30</span>
+                        </div>
+                        <input type="range" id="agentHourlyCost" min="15" max="100" step="5" value="30" class="slider">
+                        <div class="slider-hint">Cost per hour including salary and overhead</div>
+                    </div>
+
+                    <div class="package-selector-group">
+                        <label class="package-selector-label">Choose Your Package</label>
+                        <div class="package-options">
+                            <div class="package-option" data-price="99">
+                                <input type="radio" name="package" id="starter" value="99" checked>
+                                <label for="starter">
+                                    <div class="package-name">Starter Agent</div>
+                                    <div class="package-price">$99<span>/mo</span></div>
+                                </label>
+                            </div>
+                            <div class="package-option" data-price="299">
+                                <input type="radio" name="package" id="pro" value="299">
+                                <label for="pro">
+                                    <div class="package-name">Pro Agency</div>
+                                    <div class="package-price">$299<span>/mo</span></div>
+                                </label>
+                            </div>
+                            <div class="package-option" data-price="750">
+                                <input type="radio" name="package" id="enterprise" value="750">
+                                <label for="enterprise">
+                                    <div class="package-name">Enterprise Broker</div>
+                                    <div class="package-price">$750<span>/mo</span></div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Results Display -->
+                <div class="roi-results-display">
+                    <div class="roi-result-box revenue-box">
+                        <div class="result-icon">💰</div>
+                        <div class="result-label">Additional Monthly Revenue</div>
+                        <div class="result-value" id="additionalRevenue">$37,500</div>
+                        <div class="result-detail">
+                            <span id="incrementalDeals">5.0</span> extra deals from better conversions
+                        </div>
+                    </div>
+
+                    <div class="roi-result-box savings-box">
+                        <div class="result-icon">⏱️</div>
+                        <div class="result-label">Monthly Cost Savings</div>
+                        <div class="result-value" id="costSavings">$3,750</div>
+                        <div class="result-detail">
+                            <span id="hoursSaved">125</span> hours of agent time reclaimed
+                        </div>
+                    </div>
+
+                    <div class="roi-result-box total-box">
+                        <div class="result-icon">📈</div>
+                        <div class="result-label">Net Monthly ROI</div>
+                        <div class="result-value large" id="netMonthlyROI">$40,751</div>
+                        <div class="result-detail">
+                            Annual ROI: <span id="annualROI">$489,012</span>
+                        </div>
+                        <div class="result-percentage" id="roiPercentage">8,163% ROI</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Pricing Section -->
     <section class="pricing" id="pricing">
         <div class="container">
             <div class="section-header">
@@ -343,6 +474,123 @@
                     });
                 }
             });
+        });
+
+        // ROI Calculator functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get all slider elements
+            const monthlyLeadsSlider = document.getElementById('monthlyLeads');
+            const conversionRateSlider = document.getElementById('conversionRate');
+            const avgCommissionSlider = document.getElementById('avgCommission');
+            const aiConversionIncreaseSlider = document.getElementById('aiConversionIncrease');
+            const timeSavedPerLeadSlider = document.getElementById('timeSavedPerLead');
+            const agentHourlyCostSlider = document.getElementById('agentHourlyCost');
+
+            // Get package radio buttons
+            const packageRadios = document.querySelectorAll('input[name="package"]');
+
+            // Get all value display elements
+            const monthlyLeadsValue = document.getElementById('monthlyLeadsValue');
+            const conversionRateValue = document.getElementById('conversionRateValue');
+            const avgCommissionValue = document.getElementById('avgCommissionValue');
+            const aiConversionIncreaseValue = document.getElementById('aiConversionIncreaseValue');
+            const timeSavedPerLeadValue = document.getElementById('timeSavedPerLeadValue');
+            const agentHourlyCostValue = document.getElementById('agentHourlyCostValue');
+
+            // Format currency
+            function formatCurrency(value) {
+                return '$' + Math.round(value).toLocaleString('en-US');
+            }
+
+            // Format number with commas
+            function formatNumber(value) {
+                return Math.round(value).toLocaleString('en-US');
+            }
+
+            // Update slider value displays
+            function updateSliderDisplay(slider, displayElement, formatter) {
+                displayElement.textContent = formatter(parseFloat(slider.value));
+            }
+
+            // Calculate and update ROI
+            function calculateROI() {
+                // Get values
+                const monthlyLeads = parseFloat(monthlyLeadsSlider.value);
+                const conversionRate = parseFloat(conversionRateSlider.value);
+                const avgCommission = parseFloat(avgCommissionSlider.value);
+                const aiConversionIncrease = parseFloat(aiConversionIncreaseSlider.value);
+                const timeSavedPerLead = parseFloat(timeSavedPerLeadSlider.value);
+                const agentHourlyCost = parseFloat(agentHourlyCostSlider.value);
+
+                // Get selected package price
+                const selectedPackage = document.querySelector('input[name="package"]:checked');
+                const subscriptionCost = parseFloat(selectedPackage.value);
+
+                // Step 1: Increased Revenue from Better Conversions
+                const incrementalDeals = (monthlyLeads * aiConversionIncrease) / 100;
+                const incrementalRevenue = incrementalDeals * avgCommission;
+
+                // Step 2: Operational Cost Savings
+                const timeSavedMinutes = monthlyLeads * timeSavedPerLead;
+                const timeSavedHours = timeSavedMinutes / 60;
+                const costSavings = timeSavedHours * agentHourlyCost;
+
+                // Step 3: Total ROI
+                const totalBenefit = incrementalRevenue + costSavings;
+                const netMonthlyROI = totalBenefit - subscriptionCost;
+                const annualROI = netMonthlyROI * 12;
+                const roiPercentage = subscriptionCost > 0 ? ((netMonthlyROI / subscriptionCost) * 100) : 0;
+
+                // Update display
+                document.getElementById('additionalRevenue').textContent = formatCurrency(incrementalRevenue);
+                document.getElementById('incrementalDeals').textContent = incrementalDeals.toFixed(1);
+                document.getElementById('costSavings').textContent = formatCurrency(costSavings);
+                document.getElementById('hoursSaved').textContent = formatNumber(timeSavedHours);
+                document.getElementById('netMonthlyROI').textContent = formatCurrency(netMonthlyROI);
+                document.getElementById('annualROI').textContent = formatCurrency(annualROI);
+                document.getElementById('roiPercentage').textContent = formatNumber(roiPercentage) + '% ROI';
+            }
+
+            // Update slider value and recalculate
+            monthlyLeadsSlider.addEventListener('input', function() {
+                updateSliderDisplay(this, monthlyLeadsValue, formatNumber);
+                calculateROI();
+            });
+
+            conversionRateSlider.addEventListener('input', function() {
+                updateSliderDisplay(this, conversionRateValue, (val) => val.toFixed(1) + '%');
+                calculateROI();
+            });
+
+            avgCommissionSlider.addEventListener('input', function() {
+                updateSliderDisplay(this, avgCommissionValue, formatCurrency);
+                calculateROI();
+            });
+
+            aiConversionIncreaseSlider.addEventListener('input', function() {
+                updateSliderDisplay(this, aiConversionIncreaseValue, (val) => val.toFixed(1) + '%');
+                calculateROI();
+            });
+
+            timeSavedPerLeadSlider.addEventListener('input', function() {
+                updateSliderDisplay(this, timeSavedPerLeadValue, (val) => Math.round(val) + ' min');
+                calculateROI();
+            });
+
+            agentHourlyCostSlider.addEventListener('input', function() {
+                updateSliderDisplay(this, agentHourlyCostValue, formatCurrency);
+                calculateROI();
+            });
+
+            // Package selection event listeners
+            packageRadios.forEach(radio => {
+                radio.addEventListener('change', function() {
+                    calculateROI();
+                });
+            });
+
+            // Initial calculation on page load
+            calculateROI();
         });
     </script>
 </body>
