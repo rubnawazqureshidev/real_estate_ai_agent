@@ -492,10 +492,26 @@ p {
     flex-shrink: 0;
 }
 
-.faq-title {
+.faq-content {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.faq-category {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--primary-color);
+    opacity: 0.8;
+}
+
+.faq-title {
     font-size: 1.125rem;
     line-height: 1.4;
+    font-weight: 600;
 }
 
 .faq-icon {
@@ -522,27 +538,19 @@ p {
     padding: 0 32px 32px 32px;
 }
 
-.faq-answer .objection {
-    background: rgba(245, 158, 11, 0.1);
-    padding: 16px 20px;
-    border-radius: 8px;
-    margin-bottom: 16px;
-    border-left: 4px solid var(--accent-color);
-}
-
 .faq-answer .handler {
     background: rgba(37, 99, 235, 0.05);
-    padding: 16px 20px;
+    padding: 20px;
     border-radius: 8px;
     border-left: 4px solid var(--primary-color);
+    color: var(--text-dark);
+    line-height: 1.8;
+    font-size: 1rem;
 }
 
-.faq-answer .objection strong,
 .faq-answer .handler strong {
     color: var(--secondary-color);
     font-weight: 700;
-    display: block;
-    margin-bottom: 8px;
 }
 
 .faq-answer p {
@@ -621,6 +629,10 @@ p {
 
     .faq-title {
         font-size: 1rem;
+    }
+
+    .faq-category {
+        font-size: 0.688rem;
     }
 
     .challenge-content {
