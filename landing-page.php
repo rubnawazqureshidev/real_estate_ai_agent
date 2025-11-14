@@ -131,6 +131,103 @@
         </div>
     </section>
 
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2>❓ Frequently Asked Questions & Objection Handlers</h2>
+                <p class="section-subtitle">Got questions? We've got answers. Here's what real estate professionals commonly ask about our AI Agent.</p>
+            </div>
+
+            <div class="faq-container">
+                <!-- FAQ 1 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span class="faq-number">1.</span>
+                        <span class="faq-title">AI vs. The Human Element</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="objection">
+                            <strong>Objection:</strong> Will this AI Agent replace my human agents or ruin the personal touch?
+                        </div>
+                        <div class="handler">
+                            <strong>Handler:</strong> The AI Agent is a <strong>co-pilot, not a replacement</strong>. It handles the 80% of repetitive, low-value work (qualification, scheduling, generic questions) so your human agents can focus 100% on the high-value, human-centric activities that actually close deals: negotiating, touring homes, and building relationships. It <em>enhances</em> the personal touch by freeing up time for it.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span class="faq-number">2.</span>
+                        <span class="faq-title">Cost and Return on Investment (ROI)</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="objection">
+                            <strong>Objection:</strong> We have a limited budget, and I'm not sure we need another subscription.
+                        </div>
+                        <div class="handler">
+                            <strong>Handler:</strong> This is an investment that pays for itself. Our <strong>ROI Calculator</strong> demonstrates that by helping you close just <strong>one extra deal per year</strong>, the AI agent generates a return many times its annual cost. The real cost is <strong>losing a hot lead</strong> to a competitor because your agent was unavailable after hours.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span class="faq-number">3.</span>
+                        <span class="faq-title">Implementation and Ease of Use</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="objection">
+                            <strong>Objection:</strong> Is it difficult to set up, and how much training does my team need?
+                        </div>
+                        <div class="handler">
+                            <strong>Handler:</strong> Setup is designed for <strong>zero technical hassle</strong>. We handle the full integration with your website, CRM, and MLS platform. Your team needs a simple, <strong>30-minute training session</strong> on the <em>hand-off protocol</em>—when and how to take over a qualified lead. The AI does the heavy lifting; your team just uses the hot leads it delivers.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span class="faq-number">4.</span>
+                        <span class="faq-title">Accuracy and Trust</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="objection">
+                            <strong>Objection:</strong> What if the AI gives out wrong information or a 'hallucination' about a property?
+                        </div>
+                        <div class="handler">
+                            <strong>Handler:</strong> Our AI Agent is <strong>grounded exclusively in your data</strong>—your MLS feed and your agency policies. It only provides facts from your listings and <strong>always escalates</strong> to a human agent for complex legal or negotiation questions, ensuring compliance and accuracy. We eliminate guesswork.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 5 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span class="faq-number">5.</span>
+                        <span class="faq-title">Feature Comparison</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="objection">
+                            <strong>Objection:</strong> We already use a basic chatbot for FAQs. How is this different?
+                        </div>
+                        <div class="handler">
+                            <strong>Handler:</strong> A basic chatbot is reactive; our solution is an <strong>autonomous Agent</strong>—it's proactive and goal-oriented. It doesn't just <em>answer</em> 'Is the house available?' it actively <em>qualifies</em> the buyer, <em>searches</em> for similar properties, <em>syncs</em> with your calendar, and <strong>books a viewing appointment</strong>. It turns a simple inquiry into a ready-to-act client.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- CTA Section -->
     <section class="cta-section" id="contact">
         <div class="container">
@@ -193,6 +290,30 @@
                         block: 'start'
                     });
                 }
+            });
+        });
+
+        // FAQ Accordion functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+
+                question.addEventListener('click', function() {
+                    // Check if this item is already active
+                    const isActive = item.classList.contains('active');
+
+                    // Close all FAQ items
+                    faqItems.forEach(faq => {
+                        faq.classList.remove('active');
+                    });
+
+                    // If it wasn't active, open it
+                    if (!isActive) {
+                        item.classList.add('active');
+                    }
+                });
             });
         });
     </script>
