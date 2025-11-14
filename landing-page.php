@@ -141,7 +141,7 @@
 
             <div class="faq-container">
                 <!-- FAQ 1 -->
-                <div class="faq-item">
+                <div class="faq-item active">
                     <button class="faq-question">
                         <span class="faq-number">1.</span>
                         <div class="faq-content">
@@ -158,7 +158,7 @@
                 </div>
 
                 <!-- FAQ 2 -->
-                <div class="faq-item">
+                <div class="faq-item active">
                     <button class="faq-question">
                         <span class="faq-number">2.</span>
                         <div class="faq-content">
@@ -175,7 +175,7 @@
                 </div>
 
                 <!-- FAQ 3 -->
-                <div class="faq-item">
+                <div class="faq-item active">
                     <button class="faq-question">
                         <span class="faq-number">3.</span>
                         <div class="faq-content">
@@ -192,7 +192,7 @@
                 </div>
 
                 <!-- FAQ 4 -->
-                <div class="faq-item">
+                <div class="faq-item active">
                     <button class="faq-question">
                         <span class="faq-number">4.</span>
                         <div class="faq-content">
@@ -209,7 +209,7 @@
                 </div>
 
                 <!-- FAQ 5 -->
-                <div class="faq-item">
+                <div class="faq-item active">
                     <button class="faq-question">
                         <span class="faq-number">5.</span>
                         <div class="faq-content">
@@ -301,18 +301,8 @@
                 const question = item.querySelector('.faq-question');
 
                 question.addEventListener('click', function() {
-                    // Check if this item is already active
-                    const isActive = item.classList.contains('active');
-
-                    // Close all FAQ items
-                    faqItems.forEach(faq => {
-                        faq.classList.remove('active');
-                    });
-
-                    // If it wasn't active, open it
-                    if (!isActive) {
-                        item.classList.add('active');
-                    }
+                    // Toggle the active class on the clicked item
+                    item.classList.toggle('active');
                 });
             });
         });
