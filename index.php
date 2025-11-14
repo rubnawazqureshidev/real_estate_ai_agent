@@ -40,6 +40,9 @@
         </div>
     </header>
 
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
@@ -690,23 +693,45 @@
         document.addEventListener('DOMContentLoaded', function() {
             const mobileMenuToggle = document.getElementById('mobileMenuToggle');
             const navMenu = document.getElementById('navMenu');
+            const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
             const header = document.getElementById('header');
 
+            // Function to close menu
+            function closeMobileMenu() {
+                mobileMenuToggle.classList.remove('active');
+                navMenu.classList.remove('active');
+                mobileMenuOverlay.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+
+            // Function to open menu
+            function openMobileMenu() {
+                mobileMenuToggle.classList.add('active');
+                navMenu.classList.add('active');
+                mobileMenuOverlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+
             // Toggle mobile menu
-            if (mobileMenuToggle && navMenu) {
+            if (mobileMenuToggle && navMenu && mobileMenuOverlay) {
                 mobileMenuToggle.addEventListener('click', function() {
-                    mobileMenuToggle.classList.toggle('active');
-                    navMenu.classList.toggle('active');
-                    document.body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : '';
+                    if (navMenu.classList.contains('active')) {
+                        closeMobileMenu();
+                    } else {
+                        openMobileMenu();
+                    }
+                });
+
+                // Close menu when clicking on overlay
+                mobileMenuOverlay.addEventListener('click', function() {
+                    closeMobileMenu();
                 });
 
                 // Close menu when clicking on a link
                 const navLinks = navMenu.querySelectorAll('.nav-link');
                 navLinks.forEach(link => {
                     link.addEventListener('click', function() {
-                        mobileMenuToggle.classList.remove('active');
-                        navMenu.classList.remove('active');
-                        document.body.style.overflow = '';
+                        closeMobileMenu();
                     });
                 });
 
@@ -714,11 +739,10 @@
                 document.addEventListener('click', function(event) {
                     const isClickInsideNav = navMenu.contains(event.target);
                     const isClickOnToggle = mobileMenuToggle.contains(event.target);
+                    const isClickOnOverlay = mobileMenuOverlay.contains(event.target);
 
-                    if (!isClickInsideNav && !isClickOnToggle && navMenu.classList.contains('active')) {
-                        mobileMenuToggle.classList.remove('active');
-                        navMenu.classList.remove('active');
-                        document.body.style.overflow = '';
+                    if (!isClickInsideNav && !isClickOnToggle && !isClickOnOverlay && navMenu.classList.contains('active')) {
+                        closeMobileMenu();
                     }
                 });
             }
