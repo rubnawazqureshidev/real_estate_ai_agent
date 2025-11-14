@@ -20,7 +20,7 @@
                 <p class="hero-subtitle">The intelligent assistant that qualifies leads, answers questions, and books appointments while you focus on closing deals.</p>
                 <div class="cta-buttons">
                     <a href="#contact" class="btn btn-primary">Get Your Free Demo</a>
-                    <a href="#features" class="btn btn-secondary">See How It Works</a>
+                    <a href="#pricing" class="btn btn-secondary">View Pricing</a>
                 </div>
             </div>
         </div>
@@ -127,6 +127,159 @@
                 <blockquote>
                     <p>"Imagine walking into the office and seeing a list of 5 scheduled appointments and 10 pre-qualified buyers—all handled while you were away. That's the power of the AI Agent."</p>
                 </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2>Simple, Transparent Pricing</h2>
+                <p class="section-subtitle">Choose the plan that fits your agency's size and needs. All plans include a 7-day free trial with a 30-day money-back guarantee.</p>
+            </div>
+
+            <div class="pricing-cards">
+                <!-- Starter Agent -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <div class="pricing-icon">🚀</div>
+                        <h3>Starter Agent</h3>
+                        <p class="pricing-target">Independent Agents / Small Teams</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price-currency">$</span>
+                        <span class="price-amount">99</span>
+                        <span class="price-period">- $199/mo</span>
+                    </div>
+                    <div class="pricing-features">
+                        <div class="feature-highlight">
+                            <strong>Core Value:</strong> Lead Qualification & 24/7 Q&A
+                        </div>
+                        <ul>
+                            <li>✓ Up to 500 qualified leads/queries per month</li>
+                            <li>✓ Basic reports & analytics</li>
+                            <li>✓ 1 User Seat</li>
+                            <li>✓ Email support</li>
+                            <li>✓ 7-day free trial</li>
+                        </ul>
+                    </div>
+                    <a href="#contact" class="btn btn-secondary btn-large">Start Free Trial</a>
+                </div>
+
+                <!-- Pro Agency (Popular) -->
+                <div class="pricing-card pricing-card-popular">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <div class="pricing-icon">⚡</div>
+                        <h3>Pro Agency</h3>
+                        <p class="pricing-target">Mid-Size Brokerages / Teams</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price-currency">$</span>
+                        <span class="price-amount">299</span>
+                        <span class="price-period">- $499/mo</span>
+                    </div>
+                    <div class="pricing-features">
+                        <div class="feature-highlight">
+                            <strong>Core Value:</strong> Full Automation Suite
+                        </div>
+                        <ul>
+                            <li>✓ Up to 2,000 qualified leads/queries per month</li>
+                            <li>✓ Appointment Booking integration</li>
+                            <li>✓ Advanced reports & analytics</li>
+                            <li>✓ 5 User Seats</li>
+                            <li>✓ Priority Support</li>
+                            <li>✓ 7-day free trial</li>
+                        </ul>
+                    </div>
+                    <a href="#contact" class="btn btn-primary btn-large">Start Free Trial</a>
+                </div>
+
+                <!-- Enterprise Broker -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <div class="pricing-icon">🏢</div>
+                        <h3>Enterprise Broker</h3>
+                        <p class="pricing-target">Large Brokerages / Franchises</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price-currency">$</span>
+                        <span class="price-amount">750</span>
+                        <span class="price-period">+/mo</span>
+                    </div>
+                    <div class="pricing-features">
+                        <div class="feature-highlight">
+                            <strong>Core Value:</strong> Scalability & Deep Integration
+                        </div>
+                        <ul>
+                            <li>✓ Unlimited queries & leads</li>
+                            <li>✓ Advanced Follow-up orchestration</li>
+                            <li>✓ Custom CRM integration (Salesforce, HubSpot)</li>
+                            <li>✓ Unlimited User Seats</li>
+                            <li>✓ Dedicated Account Manager</li>
+                            <li>✓ Custom onboarding & training</li>
+                        </ul>
+                    </div>
+                    <a href="#contact" class="btn btn-secondary btn-large">Get Custom Quote</a>
+                </div>
+            </div>
+
+            <!-- Add-ons Section -->
+            <div class="pricing-addons">
+                <h3>Optional Add-ons</h3>
+                <div class="addon-grid">
+                    <div class="addon-card">
+                        <div class="addon-icon">🔧</div>
+                        <h4>Custom Integrations</h4>
+                        <p>One-time setup for proprietary or non-standard CRM/website platforms</p>
+                        <div class="addon-price">$500 - $1,500</div>
+                    </div>
+                    <div class="addon-card">
+                        <div class="addon-icon">📊</div>
+                        <h4>Advanced Analytics Package</h4>
+                        <p>Deep insights into buyer behavior and market trends</p>
+                        <div class="addon-price">+$99/mo</div>
+                    </div>
+                    <div class="addon-card">
+                        <div class="addon-icon">🎓</div>
+                        <h4>Team Training & Onboarding</h4>
+                        <p>Comprehensive training sessions for your team</p>
+                        <div class="addon-price">$299 one-time</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Savings Banner -->
+            <div class="pricing-savings">
+                <div class="savings-card">
+                    <div class="savings-icon">💰</div>
+                    <div class="savings-content">
+                        <h4>Save 15-20% with Annual Billing</h4>
+                        <p>Pay annually and get up to 20% off your subscription. Improve cash flow and reduce churn while locking in your rate.</p>
+                    </div>
+                    <a href="#contact" class="btn btn-primary">Contact Sales</a>
+                </div>
+            </div>
+
+            <!-- Trust Indicators -->
+            <div class="pricing-trust">
+                <div class="trust-item">
+                    <span class="trust-icon">✓</span>
+                    <span>7-Day Free Trial</span>
+                </div>
+                <div class="trust-item">
+                    <span class="trust-icon">✓</span>
+                    <span>30-Day Money-Back Guarantee</span>
+                </div>
+                <div class="trust-item">
+                    <span class="trust-icon">✓</span>
+                    <span>No Credit Card Required</span>
+                </div>
+                <div class="trust-item">
+                    <span class="trust-icon">✓</span>
+                    <span>Cancel Anytime</span>
+                </div>
             </div>
         </div>
     </section>
