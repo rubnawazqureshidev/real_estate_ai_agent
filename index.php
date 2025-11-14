@@ -632,18 +632,6 @@
                     </ul>
                 </div>
 
-                <!-- Solutions -->
-                <div class="footer-column">
-                    <h4 class="footer-heading">Solutions</h4>
-                    <ul class="footer-links">
-                        <li><a href="#features">Lead Qualification</a></li>
-                        <li><a href="#features">Property Search</a></li>
-                        <li><a href="#features">Appointment Booking</a></li>
-                        <li><a href="#features">Automated Follow-ups</a></li>
-                        <li><a href="#features">24/7 Availability</a></li>
-                    </ul>
-                </div>
-
                 <!-- Contact Info -->
                 <div class="footer-column">
                     <h4 class="footer-heading">Contact</h4>
