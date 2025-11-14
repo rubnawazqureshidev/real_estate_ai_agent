@@ -150,7 +150,7 @@
                     <div class="pricing-price">
                         <span class="price-currency">$</span>
                         <span class="price-amount">99</span>
-                        <span class="price-period">- $199/mo</span>
+                        <span class="price-period">/mo</span>
                     </div>
                     <div class="pricing-features">
                         <div class="feature-highlight">
@@ -178,7 +178,7 @@
                     <div class="pricing-price">
                         <span class="price-currency">$</span>
                         <span class="price-amount">299</span>
-                        <span class="price-period">- $499/mo</span>
+                        <span class="price-period">/mo</span>
                     </div>
                     <div class="pricing-features">
                         <div class="feature-highlight">
@@ -206,7 +206,7 @@
                     <div class="pricing-price">
                         <span class="price-currency">$</span>
                         <span class="price-amount">750</span>
-                        <span class="price-period">+/mo</span>
+                        <span class="price-period">/mo</span>
                     </div>
                     <div class="pricing-features">
                         <div class="feature-highlight">
@@ -271,10 +271,6 @@
                 <div class="trust-item">
                     <span class="trust-icon">✓</span>
                     <span>30-Day Money-Back Guarantee</span>
-                </div>
-                <div class="trust-item">
-                    <span class="trust-icon">✓</span>
-                    <span>No Credit Card Required</span>
                 </div>
                 <div class="trust-item">
                     <span class="trust-icon">✓</span>
