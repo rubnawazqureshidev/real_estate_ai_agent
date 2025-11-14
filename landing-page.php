@@ -200,13 +200,31 @@
                         <div class="slider-hint">Cost per hour including salary and overhead</div>
                     </div>
 
-                    <div class="slider-group">
-                        <div class="slider-label-row">
-                            <label for="subscriptionCost">Monthly Subscription Cost</label>
-                            <span class="slider-value" id="subscriptionCostValue">$499</span>
+                    <div class="package-selector-group">
+                        <label class="package-selector-label">Choose Your Package</label>
+                        <div class="package-options">
+                            <div class="package-option" data-price="99">
+                                <input type="radio" name="package" id="starter" value="99" checked>
+                                <label for="starter">
+                                    <div class="package-name">Starter Agent</div>
+                                    <div class="package-price">$99<span>/mo</span></div>
+                                </label>
+                            </div>
+                            <div class="package-option" data-price="299">
+                                <input type="radio" name="package" id="pro" value="299">
+                                <label for="pro">
+                                    <div class="package-name">Pro Agency</div>
+                                    <div class="package-price">$299<span>/mo</span></div>
+                                </label>
+                            </div>
+                            <div class="package-option" data-price="750">
+                                <input type="radio" name="package" id="enterprise" value="750">
+                                <label for="enterprise">
+                                    <div class="package-name">Enterprise Broker</div>
+                                    <div class="package-price">$750<span>/mo</span></div>
+                                </label>
+                            </div>
                         </div>
-                        <input type="range" id="subscriptionCost" min="99" max="1999" step="50" value="499" class="slider">
-                        <div class="slider-hint">AI Agent monthly subscription fee</div>
                     </div>
                 </div>
 
@@ -318,7 +336,9 @@
             const aiConversionIncreaseSlider = document.getElementById('aiConversionIncrease');
             const timeSavedPerLeadSlider = document.getElementById('timeSavedPerLead');
             const agentHourlyCostSlider = document.getElementById('agentHourlyCost');
-            const subscriptionCostSlider = document.getElementById('subscriptionCost');
+
+            // Get package radio buttons
+            const packageRadios = document.querySelectorAll('input[name="package"]');
 
             // Get all value display elements
             const monthlyLeadsValue = document.getElementById('monthlyLeadsValue');
@@ -327,7 +347,6 @@
             const aiConversionIncreaseValue = document.getElementById('aiConversionIncreaseValue');
             const timeSavedPerLeadValue = document.getElementById('timeSavedPerLeadValue');
             const agentHourlyCostValue = document.getElementById('agentHourlyCostValue');
-            const subscriptionCostValue = document.getElementById('subscriptionCostValue');
 
             // Format currency
             function formatCurrency(value) {
@@ -353,7 +372,10 @@
                 const aiConversionIncrease = parseFloat(aiConversionIncreaseSlider.value);
                 const timeSavedPerLead = parseFloat(timeSavedPerLeadSlider.value);
                 const agentHourlyCost = parseFloat(agentHourlyCostSlider.value);
-                const subscriptionCost = parseFloat(subscriptionCostSlider.value);
+
+                // Get selected package price
+                const selectedPackage = document.querySelector('input[name="package"]:checked');
+                const subscriptionCost = parseFloat(selectedPackage.value);
 
                 // Step 1: Increased Revenue from Better Conversions
                 const incrementalDeals = (monthlyLeads * aiConversionIncrease) / 100;
@@ -411,9 +433,11 @@
                 calculateROI();
             });
 
-            subscriptionCostSlider.addEventListener('input', function() {
-                updateSliderDisplay(this, subscriptionCostValue, formatCurrency);
-                calculateROI();
+            // Package selection event listeners
+            packageRadios.forEach(radio => {
+                radio.addEventListener('change', function() {
+                    calculateROI();
+                });
             });
 
             // Initial calculation on page load
