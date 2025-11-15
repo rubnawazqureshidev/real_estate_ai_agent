@@ -80,30 +80,71 @@
                 <p class="section-subtitle">Introducing the intelligent assistant designed specifically for your agency. Our AI Agent seamlessly integrates into your website, social media, and communication channels, ensuring no lead is ever missed, and every interaction is productive.</p>
             </div>
 
-            <!-- Use Cases -->
-            <div class="use-cases">
-                <div class="use-case-card">
-                    <div class="use-case-icon">✅</div>
+            <!-- Feature 1: Lead Qualification (Text Left, Image Right) -->
+            <div class="feature-showcase">
+                <div class="feature-showcase-content">
+                    <div class="feature-showcase-icon">✅</div>
                     <h3>Lead Qualification</h3>
                     <p>Automatically engage new inquiries with intelligent, dynamic questions. The AI scores and tags leads based on their readiness (e.g., pre-approved, needs viewing ASAP, just browsing), delivering only hot, qualified leads straight to your inbox.</p>
+                    <ul class="feature-benefits">
+                        <li>Instant lead scoring and prioritization</li>
+                        <li>Smart qualification questions</li>
+                        <li>Automatic tagging and categorization</li>
+                    </ul>
                 </div>
+                <div class="feature-showcase-image">
+                    <img src="https://placehold.co/600x400/2563eb/ffffff?text=Lead+Qualification" alt="Lead Qualification Interface">
+                </div>
+            </div>
 
-                <div class="use-case-card">
-                    <div class="use-case-icon">🔎</div>
+            <!-- Feature 2: Property Search (Image Left, Text Right) -->
+            <div class="feature-showcase feature-showcase-reverse">
+                <div class="feature-showcase-image">
+                    <img src="https://placehold.co/600x400/f59e0b/ffffff?text=Property+Search" alt="Property Search Assistant">
+                </div>
+                <div class="feature-showcase-content">
+                    <div class="feature-showcase-icon">🔎</div>
                     <h3>Property Search Assistant</h3>
                     <p>A smart interface that guides users through your listings. It understands natural language requests like, "Show me 3-bedroom houses with a pool under $500k in Northwood," and provides immediate, accurate results.</p>
+                    <ul class="feature-benefits">
+                        <li>Natural language understanding</li>
+                        <li>Real-time property matching</li>
+                        <li>Intelligent filtering and recommendations</li>
+                    </ul>
                 </div>
+            </div>
 
-                <div class="use-case-card">
-                    <div class="use-case-icon">🗓️</div>
+            <!-- Feature 3: Appointment Booking (Text Left, Image Right) -->
+            <div class="feature-showcase">
+                <div class="feature-showcase-content">
+                    <div class="feature-showcase-icon">🗓️</div>
                     <h3>Appointment Booking</h3>
                     <p>Connects directly to your calendar. The AI handles the back-and-forth scheduling of viewings and consultations, confirming availability, and sending reminders—all without a single human touch.</p>
+                    <ul class="feature-benefits">
+                        <li>Calendar integration and sync</li>
+                        <li>Automated scheduling coordination</li>
+                        <li>Smart reminders and confirmations</li>
+                    </ul>
                 </div>
+                <div class="feature-showcase-image">
+                    <img src="https://placehold.co/600x400/10b981/ffffff?text=Appointment+Booking" alt="Appointment Booking System">
+                </div>
+            </div>
 
-                <div class="use-case-card">
-                    <div class="use-case-icon">📞</div>
+            <!-- Feature 4: Automated Follow-ups (Image Left, Text Right) -->
+            <div class="feature-showcase feature-showcase-reverse">
+                <div class="feature-showcase-image">
+                    <img src="https://placehold.co/600x400/6366f1/ffffff?text=Automated+Follow-ups" alt="Automated Follow-up System">
+                </div>
+                <div class="feature-showcase-content">
+                    <div class="feature-showcase-icon">📞</div>
                     <h3>Automated Follow-ups</h3>
                     <p>Never let a lead go cold. The AI can be programmed to send timely, relevant follow-up communications (e.g., new listings that match their search criteria, or a prompt to book a viewing).</p>
+                    <ul class="feature-benefits">
+                        <li>Personalized follow-up sequences</li>
+                        <li>Behavior-triggered messaging</li>
+                        <li>Multi-channel communication</li>
+                    </ul>
                 </div>
             </div>
         </div>
