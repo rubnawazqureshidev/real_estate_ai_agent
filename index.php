@@ -498,7 +498,7 @@
                     <button class="faq-question">
                         <span class="faq-number">1.</span>
                         <div class="faq-content">
-                            <span class="faq-category">AI vs. The Human Element</span>
+                            <span class="faq-category">🤝 AI vs. The Human Element</span>
                             <span class="faq-title">Will this AI Agent replace my human agents or ruin the personal touch?</span>
                         </div>
                         <span class="faq-icon">+</span>
@@ -515,7 +515,7 @@
                     <button class="faq-question">
                         <span class="faq-number">2.</span>
                         <div class="faq-content">
-                            <span class="faq-category">Cost and Return on Investment (ROI)</span>
+                            <span class="faq-category">💰 Cost and Return on Investment</span>
                             <span class="faq-title">We have a limited budget, and I'm not sure we need another subscription.</span>
                         </div>
                         <span class="faq-icon">+</span>
@@ -532,7 +532,7 @@
                     <button class="faq-question">
                         <span class="faq-number">3.</span>
                         <div class="faq-content">
-                            <span class="faq-category">Implementation and Ease of Use</span>
+                            <span class="faq-category">⚙️ Implementation & Ease of Use</span>
                             <span class="faq-title">Is it difficult to set up, and how much training does my team need?</span>
                         </div>
                         <span class="faq-icon">+</span>
@@ -549,7 +549,7 @@
                     <button class="faq-question">
                         <span class="faq-number">4.</span>
                         <div class="faq-content">
-                            <span class="faq-category">Accuracy and Trust</span>
+                            <span class="faq-category">✅ Accuracy & Trust</span>
                             <span class="faq-title">What if the AI gives out wrong information or a 'hallucination' about a property?</span>
                         </div>
                         <span class="faq-icon">+</span>
@@ -566,7 +566,7 @@
                     <button class="faq-question">
                         <span class="faq-number">5.</span>
                         <div class="faq-content">
-                            <span class="faq-category">Feature Comparison</span>
+                            <span class="faq-category">⚡ Feature Comparison</span>
                             <span class="faq-title">We already use a basic chatbot for FAQs. How is this different?</span>
                         </div>
                         <span class="faq-icon">+</span>
