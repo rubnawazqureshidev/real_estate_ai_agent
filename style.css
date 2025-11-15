@@ -2474,8 +2474,8 @@ html {
 }
 
 .faq-item:hover {
-    border-color: rgba(37, 99, 235, 0.3);
-    box-shadow: 0 12px 24px rgba(37, 99, 235, 0.12);
+    border-color: rgba(226, 232, 240, 0.8);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
     transform: translateY(-2px);
 }
 
@@ -2484,8 +2484,8 @@ html {
 }
 
 .faq-item.active {
-    border-color: var(--primary-color);
-    box-shadow: 0 16px 32px rgba(37, 99, 235, 0.18);
+    border-color: rgba(226, 232, 240, 0.8);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.1);
     background: linear-gradient(to right, rgba(37, 99, 235, 0.02) 0%, white 100%);
 }
 
