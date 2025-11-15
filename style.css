@@ -1378,7 +1378,7 @@ p {
 
     .faq-category {
         font-size: 0.65rem;
-        padding: 3px 10px;
+        padding: 3px 0;
     }
 
     .faq-answer .handler {
@@ -2555,9 +2555,7 @@ html {
     color: var(--primary-color);
     opacity: 0.9;
     display: inline-block;
-    padding: 4px 12px;
-    background: rgba(37, 99, 235, 0.08);
-    border-radius: 6px;
+    padding: 4px 0;
     margin-bottom: 4px;
 }
 
@@ -2613,7 +2611,6 @@ html {
     background: linear-gradient(135deg, rgba(37, 99, 235, 0.06) 0%, rgba(37, 99, 235, 0.02) 100%);
     padding: 24px 28px;
     border-radius: 12px;
-    border-left: 4px solid var(--primary-color);
     color: var(--text-dark);
     line-height: 1.9;
     font-size: 1.05rem;
